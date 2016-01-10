@@ -1,0 +1,9 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="32px" height="38.22px" viewBox="0 0 32 38.22" style="enable-background:new 0 0 32 38.22;" xml:space="preserve">
+  <style type="text/css">
+    .st2{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+    .st3{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+  </style>
+  <path class="st2" d="M20.78,33.78L16,37.02l-4.78-3.24C4.79,29.43,1,22.52,1,15.17L1,5.3c0-0.88,0.67-1.64,1.61-1.81L16,1.02
+    l13.39,2.47C30.33,3.66,31,4.42,31,5.3v9.87C31,22.52,27.21,29.43,20.78,33.78z"></path>
+  <polyline class="st3" points="8,16.64 13.59,22.22 24,11.81 "></polyline>
+</svg>

@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+
+<html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths skrollr skrollr-desktop">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>Clarifai | Visual recognition API and services</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="http://www.clarifai.com/static/favicon.ico">
+  <link href="./Clarifai _ Visual recognition API and services_files/flexslider.min.css" rel="stylesheet" type="text/css" media="all">
+  <link href="./Clarifai _ Visual recognition API and services_files/line-icons.min.css" rel="stylesheet" type="text/css" media="all">
+  <link href="./Clarifai _ Visual recognition API and services_files/elegant-icons.min.css" rel="stylesheet" type="text/css" media="all">
+  <link href="./Clarifai _ Visual recognition API and services_files/lightbox.min.css" rel="stylesheet" type="text/css" media="all">
+  <link href="./Clarifai _ Visual recognition API and services_files/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+  <link href="./Clarifai _ Visual recognition API and services_files/theme-blues.min.css" rel="stylesheet" type="text/css" media="all">
+  <link href="./Clarifai _ Visual recognition API and services_files/theme-blues-edits.css" rel="stylesheet" type="text/css" media="all">
+  <link href="./Clarifai _ Visual recognition API and services_files/nav-footer-update.css" rel="stylesheet" type="text/css" media="all">
+  <link href="./Clarifai _ Visual recognition API and services_files/announcement.css" rel="stylesheet" type="text/css" media="all">
+
+  <link href="./Clarifai _ Visual recognition API and services_files/css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" id="www-widgetapi-script" src="./Clarifai _ Visual recognition API and services_files/www-widgetapi.js" async=""></script><script type="text/javascript" async="" src="./Clarifai _ Visual recognition API and services_files/recaptcha__en.js"></script><script async="" src="./Clarifai _ Visual recognition API and services_files/analytics.js"></script><script src="./Clarifai _ Visual recognition API and services_files/modernizr-2.6.2-respond-1.1.0.min.js"></script><style type="text/css"></style>
+  
+  <meta name="description" content="Easily integrate image and video recognition with your apps using our API. Understand your media and grow your business with our artificial intelligence technology.">
+
+  <link rel="stylesheet" href="./Clarifai _ Visual recognition API and services_files/jquery.fileupload.css">
+  <link rel="stylesheet" href="./Clarifai _ Visual recognition API and services_files/jquery.fileupload-ui.css">
+  <link rel="stylesheet" href="./Clarifai _ Visual recognition API and services_files/draw.css">
+  <link rel="stylesheet" href="./Clarifai _ Visual recognition API and services_files/custom.css">
+
+
+  <!-- start video demo -->
+  <link rel="stylesheet" type="text/css" href="./Clarifai _ Visual recognition API and services_files/video-demo-style.css">
+  <link rel="stylesheet" type="text/css" href="./Clarifai _ Visual recognition API and services_files/multi-select.css">
+  <link rel="stylesheet" type="text/css" href="./Clarifai _ Visual recognition API and services_files/graph.css">
+  <link rel="stylesheet" type="text/css" href="./Clarifai _ Visual recognition API and services_files/detail.css">
+  <link rel="stylesheet" href="./Clarifai _ Visual recognition API and services_files/jquery-ui.css">
+  <!-- end video demo -->
+
+  <!-- start captcha -->
+  <style type="text/css" scoped="scoped">
+    div#captcha-row {
+      display: none;
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+
+    div#captcha-text {
+      color: #ff3f10;
+    }
+    div#captcha-container {
+      margin: 0 auto !important;
+      width: 304px;
+    }
+  </style>
+  <!-- end captcha -->
+
+
+   
+  <script>
+    (function(i,s,o,g,r,a,m){i['GooglealyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45912337-1', 'clarifai.com');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body>
+  <div id="yass_top_edge_dummy" style="width: 1px; height: 1px; padding: 0px; margin: -1px 0px 0px; border-width: 0px; display: block;"></div><div id="yass_top_edge" style="padding: 0px; margin: 0px; border-width: 0px; height: 0px; display: block; width: 1351px; background-image: url(&quot;chrome-extension://khpcanbeojalbkpgpmjpdkjnkfcgfkhb/edgebgtop.png&quot;); background-attachment: scroll; background-position: 50% 100%;"></div>
+
+
+  <div class="loader" style="opacity: 0; display: none;">
+
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+  </div>
+
+  
+  <div class="header-announcement">
+    <a href="https://itunes.apple.com/app/apple-store/id1005812175?pt=52928800&ct=website&mt=8" target="_blank"><img src="./Clarifai _ Visual recognition API and services_files/forevery-transparent-76x76.png" alt="Forevery Logo"></a>
+    <span><span class="hide-small">Psst! </span>Try <a href="https://itunes.apple.com/app/apple-store/id1005812175?pt=52928800&ct=website&mt=8" target="_blank">Forevery</a>, our new (free) iPhone app</span>
+  </div>
+
+  <div class="nav-container">
+    <nav class="top-bar overlay-bar push-down">
+      <div class="container">
+        <div class="row nav-menu">
+
+          <a href="./Clarifai _ Visual recognition API and services_files/Clarifai _ Visual recognition API and services.html">
+            <div class="col-md-2 col-sm-3 columns">
+              <img class="logo logo-light logo-wide" alt="Logo" src="./Clarifai _ Visual recognition API and services_files/logo-dark-RGB.png">
+              <img class="logo logo-dark logo-wide" alt="Logo" src="./Clarifai _ Visual recognition API and services_files/logo.png">
+            </div>
+          </a>
+
+          <div class="col-md-10 col-sm-9 columns">
+            <ul class="menu">
+              <li><a href="http://www.clarifai.com/about">About</a></li>
+              <li><a href="http://www.clarifai.com/pricing">Pricing</a></li>
+              <li><a href="https://developer.clarifai.com/docs/">Developer</a></li>
+              <li><a href="http://www.clarifai.com/careers">Careers</a></li>
+              <li><a href="http://www.clarifai.com/contact">Contact Us</a></li>
+              <li><a href="https://developer.clarifai.com/accounts/signup/" class="apisignup">Sign Up Now</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mobile-toggle">
+          <i class="icon icon_menu"></i>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+
+
+  <div class="main-container">
+    <header class="fullscreen-element no-pad centered-text" style="min-height: 683px;">
+      <div class="background-image-holder parallax-background overlay skrollable skrollable-between" style="transform: translate3d(0px, -6.34082px, 0px); background: url(&quot;/static/img_ours/sky3.jpeg&quot;) 50% 0%;" data-bottom-top="-webkit-transform: translate3d(0px,-100px, 0px)" data-center="-webkit-transform: translate3d(0px,0px, 0px)" data-top-bottom="-webkit-transform: translate3d(0px,100px, 0px)">
+        <img class="background-image" alt="Background Image" src="./Clarifai _ Visual recognition API and services_files/sky3.jpeg" style="display: none;">
+      </div>
+      <!--<div class="container align-vertical">-->
+      <div class="container big-logo">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-white">Real Solutions, Artificial Intelligence</h1>
+            <h2 class="lead text-white lead-sub">Understand every image and video with the world's best visual recognition technology</h2>
+            <a href="http://www.clarifai.com/#demo" class="apisignup btn btn-primary btn-demo">Try Our Demo Now</a>
+          </div>
+        </div>
+      </div>
+      <div id="news-band-filler">
+        <style type="text/css" scoped="scoped">
+          #news-band-filler {
+            width: 200px; position: relative; float: left; height: 300px;
+          }
+          @media (max-width: 1200px) {
+            #news-band-filler { height: 500px; }
+          }
+        </style> </div>
+      <div class="bottom-band" id="news-band">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 col-4 article">
+              <div class="article-icon-container">
+                <img class="article-icon" src="./Clarifai _ Visual recognition API and services_files/curation.svg">
+              </div>
+              <div class="article-section">
+                <h3 class="sub alt-font text-white">Curation &amp; Publishing</h3>
+                <p class="text-white">
+                  Win at delivering content by serving the right media at the right time. Automatically organize your images and videos, no matter how many you have.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-4 col-4 article">
+              <div class="article-icon-container">
+                <img class="article-icon" src="./Clarifai _ Visual recognition API and services_files/moderation.svg">
+              </div>
+              <div class="article-section">
+                <h3 class="sub alt-font text-white">Moderation &amp; Filtering</h3>
+                <p class="text-white">
+                  Protect your brand with efficient and accurate monitoring of unwanted content. Take the guesswork out of user generated uploads and campaigns.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-4 col-4 article">
+              <div class="article-icon-container">
+                <img class="article-icon" src="./Clarifai _ Visual recognition API and services_files/ecommerce.svg">
+              </div>
+              <div class="article-section">
+                <h3 class="sub alt-font text-white">E-Commerce &amp; Search</h3>
+                <p class="text-white">
+                  Help your customers find what they want to buy with visual search and introduce them to things they never knew they needed with recommendations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+      
+
+    <section class="clients">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <p class="lead">Trusted by the world’s most innovative companies</p>
+          </div>
+        </div>
+
+        <div class="row client-row">
+          <div class="row-wrapper">
+            <div class="col-sm-3 text-center">
+              <img alt="Unilever" src="./Clarifai _ Visual recognition API and services_files/unilever-gray.png">
+            </div>
+
+            <div class="col-sm-3 text-center">
+              <img alt="Vimeo" src="./Clarifai _ Visual recognition API and services_files/vimeo-gray.png">
+            </div>
+
+            <div class="col-sm-3 text-center">
+              <img alt="Buzzfeed" src="./Clarifai _ Visual recognition API and services_files/buzzfeed-gray.png">
+            </div>
+
+            <div class="col-sm-3 text-center">
+              <img alt="Trivago" src="./Clarifai _ Visual recognition API and services_files/trivago-gray.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="row client-row">
+          <div class="row-wrapper">
+            <div class="col-sm-3 text-center">
+              <img alt="Vodafone" src="./Clarifai _ Visual recognition API and services_files/vodafone-gray.png">
+            </div>
+
+            <div class="col-sm-3 text-center">
+              <img alt="PicsArt" src="./Clarifai _ Visual recognition API and services_files/picsart-gray.png">
+            </div>
+
+            <div class="col-sm-3 text-center">
+              <img alt="Curalate" src="./Clarifai _ Visual recognition API and services_files/curalate-gray.png">
+            </div>
+
+            <div class="col-sm-3 text-center">
+              <img alt="Style me pretty" src="./Clarifai _ Visual recognition API and services_files/style-me-pretty-gray.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="text-banner demo" id="demo">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-12">
+            <ul class="icons-large">
+              <li><i class="icon icon-video icon-large"></i></li>
+              <li><i class="icon icon-genius icon-large"></i></li>
+              <li><i class="icon icon-pictures icon-large"></i></li>
+            </ul>
+            <h1 class="center-block">Try it out with your own media</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-10 col-sm-offset-1">
+            <p class="lead">Upload an image or video file under 100mb or give us a direct link to a file on the web.</p>
+          </div>
+        </div>
+
+        <form id="fileupload" class="form-demo" action="http://www.clarifai.com/demo/upload" method="POST" enctype="multipart/form-data">
+          <input type="hidden" name="csrfmiddlewaretoken" value="dvYYeYrdNFID1kTVNQB218lrYGdqtvaL">
+          <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+              <div class="row">
+                <div class="col-md-8 col-sm-8">
+                  <input id="imageurl" class="form-url validate-required input-wide" type="text" placeholder="Paste a url here..." name="name" autocomplete="off">
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <select id="language" onchange="changeLang()">
+                    <option value="en">English</option>
+                    <option value="ar">Arabic</option>
+                    <option value="bn">Bengali</option>
+                    <option value="da">Danish</option>
+                    <option value="de">German</option>
+                    <option value="es">Spanish</option>
+                    <option value="fi">Finnish</option>
+                    <option value="fr">French</option>
+                    <option value="hi">Hindi</option>
+                    <option value="hu">Hungarian</option>
+                    <option value="it">Italian</option>
+                    <option value="ja">Japanese</option>
+                    <option value="ko">Korean</option>
+                    <option value="nl">Dutch</option>
+                    <option value="no">Norwegian</option>
+                    <option value="pa">Punjabi</option>
+                    <option value="pl">Polish</option>
+                    <option value="pt">Portuguese</option>
+                    <option value="ru">Russian</option>
+                    <option value="sv">Swedish</option>
+                    <option value="tr">Turkish</option>
+                    <option value="zh-TW">Chinese Traditional</option>
+                    <option value="zh">Chinese Simplified</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <input id="fileupload-imgurl-btn" type="submit" class="go btn btn-primary input-wide" value="Use the Url">
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <input class="btn btn-primary btn-filled input-wide" type="button" id="upload-files-visual" value="Choose a File Instead">
+                  <input type="file" class="send-form" id="upload-files" name="files" multiple="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <p>*By using the demo you agree to our <a href="http://www.clarifai.com/terms">terms of service</a></p>
+
+        <p id="form-error" style="min-height: 15px; color: #ff3f10;"></p>
+
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1">
+            <div id="fileupload-progress" class="fileupload-progress fade">
+              <div class="progress progress-striped">
+                <div class="progress-bar progress-bar-primary active" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:0%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="captcha-row" class="row">
+          <div class="col-md-offset-3 col-md-6">
+            <div class="row">
+              <div id="captcha-text" class="col-md-6 col-sm-6">
+                <p>Before you can continue to upload media you must verify that you are a human.</p>
+              </div>
+              <div class="col-md-6 col-sm-6">
+                <div id="captcha-container">
+
+      <script src="./Clarifai _ Visual recognition API and services_files/api.js" async="" defer=""></script>
+      <script type="text/javascript">
+        function triggerCaptchaEvent(response) {
+          var evt = $.Event('captcha.completed');
+          evt.response = response;
+          $(window).trigger(evt);
+          setTimeout(function(){
+            // FIXME(vinay): the recaptcha code is broken. After 2 minutes you use it again
+            // Discussion on this: https://groups.google.com/forum/#!topic/recaptcha/lG8_hq_XrQQ
+            grecaptcha.reset();
+          }, 115000);
+        }
+
+        var onloadCallback = function() {
+          grecaptcha.render('captcha', {
+            'sitekey': '6Ld9_gATAAAAAPz55nvRSR8opIACrQGlpV1ohacd',
+            'callback': triggerCaptchaEvent
+          });
+
+          var evt = $.Event('captcha.loaded');
+          $(window).trigger(evt);
+        };
+
+        var getCaptchaResponse = function(elementId){
+          var response = grecaptcha.getResponse(elementId);
+          return {
+            key: 'g_captcha_response',
+            value: response
+          };
+        };
+
+        var resetCaptcha = function (elementId) {
+          grecaptcha.reset(elementId);
+        };
+      </script>
+
+     <!--  <div id="captcha"><div><div style="width: 304px; height: 78px;"><iframe src="./Clarifai _ Visual recognition API and services_files/anchor.html" title="recaptcha widget" width="304" height="78" role="presentation" frameborder="0" scrolling="no"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="fileupload-loading"></div>
+              <div id="videoHolder" style="display:none"></div>
+              <br>
+              <table role="presentation" class="table table-striped" id="demotable">
+                <tbody class="files" data-toggle="modal-gallery" data-target="#modal-gallery"></tbody>
+              </table>
+            </div>
+
+      </div>
+    </section>
+    
+    
+    <section class="blog-masonry bg-muted">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center content">
+            <h1>Recognize thousands of concepts</h1>
+
+            <h6>Classify, Localize &amp; Search by Similarity</h6>
+            <p class="lead">Our algorithms enable fine grained classification, localization of objects in images and similarity search based on the combination of semantic and visual properties.</p>
+          </div>
+        </div>
+        <div class="row">
+                <div class="blog-masonry-container" style="position: relative; height: 1535px;">
+
+                  <div class="col-md-4 col-sm-6 col-xs-12 blog-masonry-item auto-tag-examples" style="position: absolute; left: 0px; top: 0px;">
+                    <div class="image-tile">
+
+                      <div class="auto-tag-image">
+                        <img src="./Clarifai _ Visual recognition API and services_files/coffee.jpg" alt="train station">
+                      </div>
+
+                      <div class="similar-images">
+                        <img src="./Clarifai _ Visual recognition API and services_files/coffee_sim_1.jpg" alt="Similar image">
+                        <img src="./Clarifai _ Visual recognition API and services_files/coffee_sim_2.jpg" alt="Similar image">
+                        <img src="./Clarifai _ Visual recognition API and services_files/coffee_sim_3.jpg" alt="Similar image">
+                        <img src="./Clarifai _ Visual recognition API and services_files/coffee_sim_4.jpg" alt="Similar image">
+                      </div>
+
+                      <div class="auto-tag-predictions">
+                        <ul class="list-inline">
+                          <li class="tag">coffee</li>
+                          <li class="tag">croissant</li>
+                          <li class="tag">beverage</li>
+                          <li class="tag">morning</li>
+                          <li class="tag">breakfast</li>
+                          <li class="tag">food</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-4 col-sm-6 col-xs-12 blog-masonry-item auto-tag-examples small-hidden" style="position: absolute; left: 400px; top: 0px;">
+                    <div class="image-tile">
+
+                      <div class="auto-tag-image">
+                        <img src="./Clarifai _ Visual recognition API and services_files/bridge.jpg" alt="train station">
+                      </div>
+
+                      <div class="similar-images">
+                          <img src="./Clarifai _ Visual recognition API and services_files/sim_1.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/sim_2.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/sim_3.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/sim_4.jpg" alt="Similar image">
+                      </div>
+                      <div class="auto-tag-predictions">
+                        <ul class="list-inline">
+                          <li class="tag">night</li>
+                          <li class="tag">bridge</li>
+                          <li class="tag">city</li>
+                          <li class="tag">suspension bridge</li>
+                          <li class="tag">river</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6 col-xs-12 blog-masonry-item auto-tag-examples small-hidden" style="position: absolute; left: 800px; top: 0px;">
+                    <div class="image-tile">
+
+                      <div class="auto-tag-image">
+                        <img src="./Clarifai _ Visual recognition API and services_files/dog.jpg" alt="train station">
+                      </div>
+
+                      <div class="similar-images">
+                          <img src="./Clarifai _ Visual recognition API and services_files/dog_sim_1.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/dog_sim_2.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/dog_sim_3.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/dog_sim_4.jpg" alt="Similar image">
+                      </div>
+
+                      <div class="auto-tag-predictions">
+                        <ul class="list-inline">
+                          <li class="tag">winter</li>
+                          <li class="tag">snow</li>
+                          <li class="tag">cold</li>
+                          <li class="tag">mammal</li>
+                          <li class="tag">dog</li>
+                          <li class="tag">arctic</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6 col-xs-12 blog-masonry-item auto-tag-examples small-hidden" style="position: absolute; left: 400px; top: 449px;">
+                    <div class="image-tile">
+
+                      <div class="auto-tag-image">
+                        <img src="./Clarifai _ Visual recognition API and services_files/metro-north.jpg" alt="train station">
+                      </div>
+                      <div class="similar-images">
+                          <img src="./Clarifai _ Visual recognition API and services_files/metro-north_sim_1.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/metro-north_sim_2.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/metro-north_sim_3.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/metro-north_sim_4.jpg" alt="Similar image">
+                      </div>
+
+                      <div class="auto-tag-predictions">
+                        <ul class="list-inline">
+                          <li class="tag">train</li>
+                          <li class="tag">subway</li>
+                          <li class="tag">railroad</li>
+                          <li class="tag">railway</li>
+                          <li class="tag">station</li>
+                          <li class="tag">transportation</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6 col-xs-12 blog-masonry-item auto-tag-examples small-hidden" style="position: absolute; left: 0px; top: 573px;">
+                    <div class="image-tile">
+
+                      <div class="auto-tag-image">
+                        <img src="./Clarifai _ Visual recognition API and services_files/concert.jpg" alt="train station">
+                      </div>
+
+                      <div class="similar-images">
+                          <img src="./Clarifai _ Visual recognition API and services_files/concert_sim_1.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/concert_sim_2.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/concert_sim_3.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/concert_sim_4.jpg" alt="Similar image">
+                      </div>
+
+                      <div class="auto-tag-predictions">
+                        <ul class="list-inline">
+                          <li class="tag">concert</li>
+                          <li class="tag">performance</li>
+                          <li class="tag">stage</li>
+                          <li class="tag">musical performance</li>
+                          <li class="tag">band</li>
+                          <li class="tag">singer</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="col-md-4 col-sm-6 col-xs-12 blog-masonry-item auto-tag-examples small-hidden" style="position: absolute; left: 800px; top: 573px;">
+                    <div class="image-tile">
+
+                      <div class="auto-tag-image">
+                        <img src="./Clarifai _ Visual recognition API and services_files/city_canal.jpg" alt="train station">
+                      </div>
+                      <div class="similar-images">
+                          <img src="./Clarifai _ Visual recognition API and services_files/canal_sim_1.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/canal_sim_2.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/canal_sim_3.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/canal_sim_4.jpg" alt="Similar image">
+                      </div>
+                      <div class="auto-tag-predictions">
+                        <ul class="list-inline">
+                          <li class="tag">canal</li>
+                          <li class="tag">river</li>
+                          <li class="tag">bridge</li>
+                          <li class="tag">water</li>
+                          <li class="tag">transportation</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 col-xs-12 blog-masonry-item auto-tag-examples" style="position: absolute; left: 400px; top: 930px;">
+                    <div class="image-tile">
+
+                      <div class="auto-tag-image">
+                        <img src="./Clarifai _ Visual recognition API and services_files/child_clown.jpeg" alt="train station">
+                      </div>
+
+                      <div class="similar-images">
+                          <img src="./Clarifai _ Visual recognition API and services_files/child_clown_sim_1.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/child_clown_sim_2.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/child_clown_sim_3.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/child_clown_sim_4.jpg" alt="Similar image">
+                      </div>
+
+
+                      <div class="auto-tag-predictions">
+                        <ul class="list-inline">
+                          <li class="tag">kids</li>
+                          <li class="tag">children</li>
+                          <li class="tag">clown</li>
+                          <li class="tag">carnival</li>
+                          <li class="tag">party</li>
+                          <li class="tag">fun</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6 col-xs-12 blog-masonry-item auto-tag-examples" style="position: absolute; left: 800px; top: 988px;">
+                    <div class="image-tile">
+
+                      <div class="auto-tag-image">
+                        <img src="./Clarifai _ Visual recognition API and services_files/tennis.jpg" alt="train station">
+                      </div>
+
+                      <div class="similar-images">
+                          <img src="./Clarifai _ Visual recognition API and services_files/tennis_sim_1.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/tennis_sim_2.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/tennis_sim_3.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/tennis_sim_4.jpg" alt="Similar image">
+                      </div>
+
+                      <div class="auto-tag-predictions">
+                        <ul class="list-inline">
+                          <li class="tag">competition</li>
+                          <li class="tag">tennis</li>
+                          <li class="tag">athlete</li>
+                          <li class="tag">stadium</li>
+                          <li class="tag">ball</li>
+                          <li class="tag">many</li>
+                          <li class="tag">spectators</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6 col-xs-12 blog-masonry-item auto-tag-examples small-hidden" style="position: absolute; left: 0px; top: 1054px;">
+                    <div class="image-tile">
+
+                      <div class="auto-tag-image">
+                        <img src="./Clarifai _ Visual recognition API and services_files/market.jpg" alt="train station">
+                      </div>
+
+                      <div class="similar-images">
+                          <img src="./Clarifai _ Visual recognition API and services_files/market_sim_1.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/market_sim_2.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/market_sim_3.jpg" alt="Similar image">
+                          <img src="./Clarifai _ Visual recognition API and services_files/market_sim_4.jpg" alt="Similar image">
+                      </div>
+
+                      <div class="auto-tag-predictions">
+                        <ul class="list-inline">
+                          <li class="tag">market</li>
+                          <li class="tag">fruit</li>
+                          <li class="tag">produce</li>
+                          <li class="tag">food</li>
+                          <li class="tag">stall</li>
+                          <li class="tag">basket</li>
+                          <li class="tag">abundance</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      </div>
+      <div class="container">
+
+      </div>
+    </section>
+
+    <section id="more-info" class="side-image clearfix">
+      <div class="image-container col-md-5 col-sm-4 pull-left">
+        <div class="background-image-holder" style="background: url(&quot;/static/img_ours/stair.jpeg&quot;) 50% 0%;">
+          <img class="background-image" alt="Background Image" src="./Clarifai _ Visual recognition API and services_files/stair.jpeg" style="display: none;">
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-6 col-sm-7 col-sm-offset-5 content clearfix">
+            <h1>Get ahead of your competition with our augmented intelligence.</h1>
+            <p class="lead">
+              Our deep learning experts have built a recognition engine with unparalleled performance.
+            </p>
+            <div class="row">
+              <div class="col-md-6 no-pad-left">
+                <div class="feature feature-icon-left">
+                  <div class="icon-holder">
+                    <i class="icon icon-target"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h6>Accurate</h6>
+                    <p>
+                      Our systems approach or exceed human accuracy in recognition tasks.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 no-pad-left">
+                <div class="feature feature-icon-left">
+                  <div class="icon-holder">
+                    <i class="icon icon-speedometer"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h6>Fast</h6>
+                    <p>
+                      Orders of magnitude faster than human annotators. Our algorithms can classify
+                      images in under 100ms.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 no-pad-left">
+                <div class="feature feature-icon-left">
+                  <div class="icon-holder">
+                    <i class="icon icon-cloud"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h6>Scalable</h6>
+                    <p>
+                      We scale to your demand. Our systems are built on proven infrastructure with
+                      automatic scaling to easily process billions of requests per day.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 no-pad-left">
+                <div class="feature feature-icon-left">
+                  <div class="icon-holder">
+                    <i class="icon icon-genius"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h6>Always Improving</h6>
+                    <p>
+                      Our algorithms learn from every image they see, continuously improving their accuracy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="duplicatable-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="feature feature-icon-large">
+              <i class="icon icon-presentation icon-large"></i>
+              <h5>Advertising</h5>
+              <p>Engage your audience with ads related to the content they came to see.&nbsp;</p>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="feature feature-icon-large">
+              <i class="icon icon-basket icon-large"></i>
+              <h5>E-Commerce</h5>
+              <p>
+                Help users find what they want to buy. Stay ahead of the curve by detecting new trends.</p>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="feature feature-icon-large">
+              <i class="icon icon-shield icon-large"></i>
+              <h5>Moderation and Filtering</h5>
+              <p>
+                Monitor user submitted content to prevent spam and protect your brand.</p>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="feature feature-icon-large">
+              <i class="icon icon-pictures icon-large"></i>
+              <h5>Curation</h5>
+              <p>
+                Make it simpler to access and clean up your incredible content through automatic organization.&nbsp;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <div class="testimonials-slider text-center">
+              <ul class="slides">
+                <li class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;">
+                  <p class="text-white lead">Smart companies investing in these technologies will see deep learning as much more than a way to automatically tag images for search or analyze sentiment. They’ll see it as a way to learn a whole lot more about their businesses and the customers buying their products.</p>
+                  <span class="author text-white"> <a href="https://gigaom.com/2014/12/15/what-we-read-about-deep-learning-is-just-the-tip-of-the-iceberg/">Derrick Harris - Gigaom</a></span>
+                </li>
+
+                <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" class="">
+                  <p class="text-white lead">Deep Learning and Machine Intelligence will eat the world. The effects of this technology will change the economics of virtually every industry. </p>
+                  <span class="author text-white">Anthony Wing Kosner - Forbes</span>
+                </li>
+
+                <li style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;" class="">
+                  <p class="text-white lead">Artificially intelligent computers are now capable of deep learning using neural networks. Deep learning will eventually allow robots to recognize objects they haven’t seen before and navigate to new locations on their own. Deep learning intersects with numerous fields, and it will soon aid in manufacturing, medicine, retail, utilities, and beyond.</p>
+                  <span class="author text-white"> <a href="https://hbr.org/2015/01/the-tech-trends-you-cant-ignore-in-2015">Amy Webb - Harvard Business Review</a></span>
+                </li>
+              </ul>
+            <ol class="flex-control-nav flex-control-paging"><li><a class="flex-active">1</a></li><li><a class="">2</a></li><li><a class="">3</a></li></ol></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="clients">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <p class="lead">As Featured in</p>
+          </div>
+        </div>
+
+        <div class="row client-row">
+          <div class="row-wrapper">
+            <div class="col-sm-3 text-center">
+              <a href="http://fortune.com/2015/01/02/convolutional-neural-networks/" target="_blank"><img alt="Forbes" src="./Clarifai _ Visual recognition API and services_files/fortune.png"></a>
+            </div>
+
+            <div class="col-sm-3 text-center">
+              <a href="http://www.forbes.com/sites/roberthof/2014/09/17/ai-for-everyone-startups-aim-to-democratize-deep-learning-so-google-and-facebook-dont-hog-it-all/" target="_blank"><img alt="Forbes" src="./Clarifai _ Visual recognition API and services_files/forbes-logo.png"></a>
+            </div>
+
+            <div class="col-sm-3 text-center">
+              <a href="http://www.wired.com/2014/07/clarifai/" target="_blank"><img alt="Wired" src="./Clarifai _ Visual recognition API and services_files/wired.png"></a>
+            </div>
+
+            <div class="col-sm-3 text-center">
+              <a href="http://www.bloomberg.com/news/articles/2015-02-03/i-ll-be-back-the-return-of-artificial-intelligence" target="_blank"><img alt="Bloomberg" src="./Clarifai _ Visual recognition API and services_files/bloomberg_logo_60.png"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row client-row">
+          <div class="row-wrapper">
+            <div class="col-sm-3 text-center">
+              <a href="http://research.gigaom.com/report/image-recognition-consumer-products-will-drive-enterprise-breakthroughs" target="_blank"><img alt="Gigaom" src="./Clarifai _ Visual recognition API and services_files/gigaom-logo-bw.png"></a>
+            </div>
+
+            <div class="col-sm-3 text-center">
+              <a href="http://www.technologyreview.com/news/534631/a-startups-neural-network-can-understand-video/" target="_blank"><img alt="client" src="./Clarifai _ Visual recognition API and services_files/mit-technology-review.png"></a>
+            </div>
+
+            <div class="col-sm-3 text-center">
+              <a href="http://venturebeat.com/2015/01/30/deep-learning-startup-clarifai-goes-beyond-image-recognition-now-offers-video-analysis/" target="_blank"><img alt="client" src="./Clarifai _ Visual recognition API and services_files/venturebeat_long-160w_bw.png"></a>
+            </div>
+
+            <div class="col-sm-3 text-center">
+              <a href="http://www.canadianbusiness.com/innovation/opportunities-2015-deep-learning-artificial-intelligence/" target="_blank"><img alt="client" src="./Clarifai _ Visual recognition API and services_files/canadian-business.png"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+    
+  <div class="footer-container">
+  	<footer class="short bg-secondary-1">
+  		<div class="container">
+              <div class="row">
+                  <div class="col-sm-12">
+                      <div class="row footer-links">
+                          <div class="col-sm-2">
+                              <h4>Product</h4>
+                              <ul class="footer-list">
+                                  <li><a href="./Clarifai _ Visual recognition API and services_files/Clarifai _ Visual recognition API and services.html">Features</a></li>
+                                  <li><a href="http://www.clarifai.com/technology">Technology</a></li>
+                                  <li><a href="http://www.clarifai.com/pricing">Pricing</a></li>
+                              </ul>
+                          </div>
+                          <div class="col-sm-2">
+                              <h4>Company</h4>
+                              <ul class="footer-list">
+                                  <li><a href="http://www.clarifai.com/about">About</a></li>
+                                  <li><a href="http://www.clarifai.com/news">News</a></li>
+                                  <li><a href="http://www.clarifai.com/careers">Careers</a></li>
+                              </ul>
+                          </div>
+                          <div class="col-sm-2">
+                              <h4>Learn</h4>
+                              <ul class="footer-list">
+                                  <li><a href="http://www.clarifai.com/api">API</a></li>
+                                  <li><a href="https://developer.clarifai.com/docs/">Documentation</a></li>
+                                  <!-- <li><a href="#">Demos</a></li> -->
+                                  <!-- <li><a href="#">Support</a></li> -->
+                              </ul>
+                          </div>
+                          <div class="col-sm-2">
+                              <h4>Connect</h4>
+                              <ul class="footer-list">
+                                  <!-- <li><a href="#">Github</a></li> -->
+                                  <li><a href="https://twitter.com/clarifai">Twitter</a></li>
+                                  <li><a href="http://www.clarifai.com/contact">Contact Us</a></li>
+                                  <li><a href="https://github.com/Clarifai">GitHub</a></li>
+                                  <li><a href="http://blog.clarifai.com/">Blog</a></li>
+                              </ul>
+                          </div>
+                          <div class="col-sm-4 footer-sign-up">
+                              <h4 class="text-white">Bring the future into focus.</h4>
+                              <a href="https://developer.clarifai.com/accounts/signup/" class="btn btn-primary btn-white">Sign Up</a>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-sm-3 footer-logo">
+                                <img class="logo logo-light logo-wide" alt="Logo" src="./Clarifai _ Visual recognition API and services_files/logo-dark-RGB.png">
+                          </div>
+                          <div class="col-sm-9 copyright">
+                              <ul class="footer-list">
+                                  <li><a href="http://www.clarifai.com/terms">Terms Of Use</a></li>
+                                  <li><a href="http://www.clarifai.com/privacy">Privacy &amp; Security Statement</a></li>
+                                  <li><a href="http://www.clarifai.com/dmca">Content Takedown</a></li>
+                              </ul>
+                              <span class="sub">© Copyright 2016 Clarifai, Inc.</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  		</div>
+  	</footer>
+  </div>
+
+  <script src="./Clarifai _ Visual recognition API and services_files/iframe_api"></script>
+
+  <script src="./Clarifai _ Visual recognition API and services_files/jquery.min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/jquery.plugin.min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/bootstrap.min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/jquery.flexslider-min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/smooth-scroll.min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/skrollr.min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/spectragram.min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/scrollReveal.min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/isotope.min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/twitterFetcher_v10_min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/lightbox.min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/jquery.countdown.min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/scripts.js"></script>
+  
+  <script src="./Clarifai _ Visual recognition API and services_files/handlebars.min.js" type="application/javascript"></script>
+    
+  <script id="progress-template" type="text/x-handlebars-template">
+      <div class="template-upload row fade">
+        <div class="col-sm-12 col-xs-12 loading-wrap">
+          {{#if file.error}}
+          <div class="text-center">
+            Error with file {{ file.name }}. {{file.error}}
+          </div>
+          {{ else }}
+            <div class="progress progress-striped">
+              <div class="progress-bar progress-bar-primary active"
+                   role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width:0%;"></div>
+            </div>
+
+            <!-- <div class="spinner"> -->
+            <!--   <div class="double-bounce1"></div> -->
+            <!--   <div class="double-bounce2"></div> -->
+            <!-- </div> -->
+          {{/if }}
+        </div>
+      </div>
+  </script>
+  <script id="error-template" type="text/x-handlebars-template">
+      <div class="template-download">
+        <div class="row">
+          <div class="col-xs-4 col-xs-offset-1">
+            <div class="alert alert-primary name">
+              <span class="name">Name: {{ name }}</span>
+            </div>
+          </div>
+          <div class="col-xs-4 col-xs-offset-2">
+            <div class="alert alert-danger error">Error:
+              {{ error }}
+            </div>
+          </div>
+        </div>
+      </div>
+  </script>
+  <script id="image-template" type="text/x-handlebars-template">
+    <div class="template-download">
+      <div class="row" id="{{ results_id }}">
+        <div class="col-sm-5 col-xs-12 preview-wrap">
+          <span class="preview preview-wrap" id="{{ container_id }}" style="display : inline-block; position: relative;">
+            {{#if thumbnail_url}}
+              <a data-gallery='' href="{{url}}">
+                  <img id="{{ image_id }}" src="{{ thumbnail_url }}">
+              </a>
+            {{/if}}
+          </span>
+        </div>
+          {{#if error }}
+            <div class="col-sm-4 col-xs-12">
+              <p class="name">{{ name }}</p>
+              <div class="error">
+                  {{#each error}}
+                      {{ this }}
+                  {{/each}}
+              </div>
+            </div>
+          {{else}}
+            {{#if display_face_predicts }}
+              {{#each model_results}}
+                {{#each faces }}
+                <div class="col-sm-3 col-xs-12 auto-tag-predictions-wrap " > <!-- prediction-{{ @index }} ">-->
+                  <div class="row title">
+                    <h3 class="text-center">{{ ../name }} </h3>
+                  </div>
+                  <div class="row auto-tag-predictions">
+                    <ul class="list-inline">
+                      {{#if debug }}
+                      {{#each classes}}
+                      <li class="tag" style="background-color:{{ lookup ../colors @index}}">{{ this }} ({{ lookup ../probabilities @index}})</li>
+                        {{/each}}
+                        {{else }}
+                      {{#each classes}}
+                      <li class="tag">{{ this }}</li>
+                        {{/each }}
+                        {{/if }}
+                    </ul>
+                  </div>
+                </div>
+                {{/each }}
+              {{/each }}
+            {{else}}
+              {{#if display_mult_models }}
+                {{#each model_results }}
+                  <div style="display: inline-block; padding: 40px;">
+                  <div class="row title">
+                    <h3 class="text-center" >{{ name }}</h3>
+                  </div>
+                  <div class="row auto-tag-predictions">
+                    <ul >
+                      {{#each predicted_classes}}
+                      <li class="tag" style="background-color:{{ lookup ../colors @index}}">{{ this }} ({{ lookup ../predicted_probs @index}})</li>
+                        {{/each }}
+                    </ul>
+                  </div>
+                  </div>
+                  {{/each}}
+              {{else}}
+              <div class="col-sm-3 col-xs-12 auto-tag-predictions-wrap">
+                <div class="row title">
+                  <h3 class="text-center">Predicted Tags</h3>
+                </div>
+                <div class="row auto-tag-predictions">
+                  <ul class="list-inline">
+                    {{#if debug }}
+                    {{#each predicted_classes}}
+                    <li class="tag">{{ this }} ({{ lookup ../predicted_probs @index}})</li>
+                      {{/each }}
+                      {{else }}
+                    {{#each predicted_classes}}
+                    <li class="tag">{{ this }}</li>
+                      {{/each }}
+                      {{/if }}
+                  </ul>
+                </div>
+              </div>
+            {{/if }}
+            {{#if nearest_urls}}
+              <div class="col-sm-4 col-xs-12 neighbors">
+                <div class="row title">
+                  <h3 class="text-center">Similar Images</h3>
+                </div>
+                <div class="row simimages-wrap">
+                  <div class="img-container js-masonry" data-masonry-options='{"columnWidth": 105, "itemSelector":".item"}'>
+                      {{#each nearest_urls}}
+                        <div class="item" style="width:105px;">
+                          <img src="{{this}}"/>
+                        </div>
+                      {{/each}}
+                  </div>
+                </div>
+              </div>
+              {{/if}}
+            {{/if}}
+          {{/if}}
+      </div>
+    </div>
+  </script>
+    
+  <script type="text/javascript">
+      var progressTemplate = Handlebars.compile($('#progress-template').html());
+      var demoErrorTemplate = Handlebars.compile($('#error-template').html());
+      var imageTemplate = Handlebars.compile($('#image-template').html());
+  </script>
+
+  <!-- start video demo -->
+  <script src="./Clarifai _ Visual recognition API and services_files/d3.min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/jwplayer.js"></script>
+  <script>jwplayer.key="1eZBud8lqIaWoNWll0P18laOGS5vG13nRDVWgQ==";</script>
+  <script src="./Clarifai _ Visual recognition API and services_files/rickshaw.min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/chart.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/jquery.multi-select.js"></script>
+
+    
+  <script id="video-template" type="text/x-handlebars-template">
+      <div id="{{ video_id }}" class="video">
+      </div>
+  </script>
+
+  <script id="video-chart-template" type="text/x-handlebars-template">
+      <div id="{{ container_id }}" class="bottomCard">
+        <div class="chart_container">
+                <div class="chart"></div>
+          <div id="legend_container">
+            <div class="legend"></div>
+          </div>
+          <div class="slider"></div>
+        </div>
+        <div class="controls">
+          <div class="selectMenu">
+            <select multiple="multiple" class="series-select" name="series-select[]">
+            </select>
+          </div>
+          <div class="menuButtons">
+            <input type="button" value="Select all" class="selectAllButton hide"/>
+            <input type="button" value="Reset" class="resetButton btn btn-primary"/>
+          </div>
+        </div>
+      </div>
+      </script>
+    
+  <script type="text/javascript">
+        var videoTemplate = Handlebars.compile($("#video-template").html());
+        var videoChartTemplate = Handlebars.compile($("#video-chart-template").html());
+  </script>
+  <!-- end video demo -->
+
+  <script src="./Clarifai _ Visual recognition API and services_files/jquery-ui.min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/tmpl.min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/canvas-to-blob.min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/load-image.all.min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/jquery.iframe-transport.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/jquery.fileupload.min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/jquery.fileupload-ui.min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/jquery.fileupload-process.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/jquery.fileupload-image.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/jquery.fileupload-video.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/jquery.fileupload-validate.js"></script>
+
+  <script src="./Clarifai _ Visual recognition API and services_files/masonry.pkgd.min.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/imagesloaded.js"></script>
+
+  <script src="./Clarifai _ Visual recognition API and services_files/jquery-fu-params.js"></script>
+  <script src="./Clarifai _ Visual recognition API and services_files/jquery-fu.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function (e) {
+      $('#upload-files-visual').on('click', function () {
+        $('#upload-files').click();
+      });
+
+      var loadedCaptchaListener = function(e) {
+        // FIXME(vinay): A total guess at how long but this can't run until the captcha system
+        // is running. See if there is a callback for render
+        setTimeout(function() {
+          qd = {};
+          location.search.substr(1).split("&").forEach(function (item) {
+            var k = item.split("=")[0], v = decodeURIComponent(item.split("=")[1]);
+            (k in qd) ? qd[k].push(v) : qd[k] = [v,]
+          });
+          if ('demo_image_url' in qd && qd['demo_image_url'].length > 0) {
+            $('#imageurl').val(qd['demo_image_url']);
+            $('#fileupload-imgurl-btn').click();
+          }
+        }, 2000);
+
+        $(window).off('captcha.completed', loadedCaptchaListener);
+      };
+
+      $(window).on('captcha.loaded', loadedCaptchaListener);
+    });
+  </script>
+  <script>
+    function changeLang() {
+      var language = document.getElementById('language').value;
+      var uploader = $('#fileupload');
+      uploader.bind('fileuploadsubmit', function (e, data) {
+        data.formData['language'] = language;
+      });
+    }
+  </script>
+  <script>
+    // smooth scroll to
+    var headerHeight = 78;
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var hash = this.hash;
+          var target = $(hash);
+          target = target.length ? target : $('[name=' + hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top - headerHeight
+            }, 750, function() {
+              window.location.hash = hash;
+            });
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+
+  <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src=""><div class="lb-nav"><a class="lb-prev" href=""></a><a class="lb-next" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div><div id="point-jawn" style="z-index: 2147483647;"></div><div id="yass_bottom_edge" style="position: absolute; margin: 0px; padding: 0px; border-width: 0px; height: 0px; left: 0px; top: 0px; width: 100%; display: block; background-image: url(&quot;chrome-extension://khpcanbeojalbkpgpmjpdkjnkfcgfkhb/edgebgbot.png&quot;); background-position: 0px 0px;"></div>
+</body>
+</html>

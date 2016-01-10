@@ -1,0 +1,15 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="35.59px" height="38.5px" viewBox="0 0 35.59 38.5" style="enable-background:new 0 0 35.59 38.5;" xml:space="preserve">
+  <style type="text/css">
+    .st4{fill:#FFFFFF;}
+    .st5{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+    .st6{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+  </style>
+  <path class="st4" d="M16.33,33H2.17l1.83-22h24.16l0.61,7.34c0.79,0.46,1.52,1.03,2.15,1.7L30.01,9H2.17L0,35h18.59
+    C17.74,34.45,16.97,33.78,16.33,33z"></path>
+  <path class="st5" d="M10.09,15V7c0-3.31,2.69-6,6-6h0c3.31,0,6,2.69,6,6v8"></path>
+  <g>
+    <path class="st4" d="M23.86,21c3.19,0,5.78,2.59,5.78,5.78s-2.59,5.78-5.78,5.78s-5.78-2.59-5.78-5.78S20.68,21,23.86,21 M23.86,19
+      c-4.3,0-7.78,3.48-7.78,7.78s3.48,7.78,7.78,7.78s7.78-3.48,7.78-7.78S28.16,19,23.86,19L23.86,19z"></path>
+  </g>
+  <line class="st6" x1="34.09" y1="37" x2="29.42" y2="32.33"></line>
+</svg>

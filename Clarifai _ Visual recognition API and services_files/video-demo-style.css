@@ -1,0 +1,58 @@
+.bottomCard {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align:left
+}
+
+@media (min-width: 851px) {
+    .bottomCard {
+        width: 850px;
+    }
+}
+@media (max-width: 850px) {
+    .bottomCard {
+        width: 100%;
+    }
+}
+
+.chart_container {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.rickshaw_graph .x_tick .title {
+    top: 5px;
+}
+
+.controls {
+    text-align: center;
+}
+
+.chart {
+    border-style: solid;
+    border-color: #d4d4d4;
+    border-width: 2px;
+    margin-bottom: 5px;
+}
+
+.selectMenu {
+    margin-top: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.menuButtons {
+    margin-top: 5px;
+}
+
+.preview-bar img{
+    height: auto;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* jquery file upload has this set which will limit all videos under it's file element to
+have a width of 300px **/
+.files video {
+    max-width: 100%;
+}

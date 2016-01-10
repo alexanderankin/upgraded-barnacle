@@ -1,0 +1,31 @@
+.bbox {
+    border: 3px solid;
+    border-color: rgba(245, 245, 245, 0.4);
+    box-shadow: 0 0 3px #888888;
+}
+
+.bbox:hover {
+    border-color: rgba(245, 245, 245, 1);
+}
+
+.bboxInfo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 10px;
+    line-height: 12px;
+    overflow: hidden;
+    background-color: rgba(255,255,255, .8);
+}
+
+.bbox:hover .bboxInfo {
+    background-color: rgba(255, 255, 255, 1)
+}
+
+.bboxFiller {
+    height : 100%;
+}
+
+.imageInfoAppear {
+    display: none;
+}
